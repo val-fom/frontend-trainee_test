@@ -3,4 +3,5 @@ sublime-gulp.log
 .sublime-gulp.cache
 .jsbeautifyrc
 .jshintrc
+*.png
 */css/
