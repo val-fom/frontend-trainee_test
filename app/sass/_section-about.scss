@@ -1,0 +1,22 @@
+.section-about__container {
+	background-color: #f4f5f9;
+}
+
+.section-about {
+	min-height: 600px;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.section-about__wrapper {
+	display: flex;
+	margin: -80px;
+	padding: 40px;
+}
+
+.section-about__item {
+	flex: 1 1 auto;
+	margin: 40px;
+}

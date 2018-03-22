@@ -8,7 +8,7 @@
 
 	<title>Document</title>
 
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="./css/main.css">
 	<link rel="stylesheet" href="./fonts/icon-font/icon-font.css">
 </head>
 
@@ -25,13 +25,27 @@
 
 				<nav class="nav">
 					<ul class="nav__ul">
-						<li class="nav__item"><a href="#">Home</a></li>
-						<li class="nav__item"><a href="#">About us</a></li>
-						<li class="nav__item"><a href="#">Portfolio</a></li>
-						<li class="nav__item"><a href="#">Pricing</a></li>
-						<li class="nav__item"><a href="#">Team</a></li>
-						<li class="nav__item"><a href="#">Blog</a></li>
-						<li class="nav__item"><a href="#">Contact</a></li>
+						<li class="nav__item">
+							<a href="#">Home</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">About us</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Portfolio</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Pricing</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Team</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Blog</a>
+						</li>
+						<li class="nav__item">
+							<a href="#">Contact</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -47,7 +61,7 @@
 					<div class="brakeline__line"></div>
 				</div>
 				<p class="heading__paragraph">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 				</p>
 				<div class="heading__buttons-wrapper">
 					<a class="heading__button button button--accent" href="#">Get Started now</a>
@@ -59,14 +73,16 @@
 		<div class="header__mask header__mask--left"></div>
 		<div class="header__mask header__mask--right"></div>
 
+		<!-- FIXME: move anchor icon here and fix overflow hidden -->
 	</div>
 
 	<section class="section-who">
+		<!-- FIXME: overflow: hidden trouble -->
 		<button class="section-who__button-anchor">
-				<i class="icon-anchor" aria-hidden="true"></i>
+			<i class="icon-anchor" aria-hidden="true"></i>
 		</button>
 
-		<div class="section-who__time-wrapper">
+		<div class="section-who__item-wrapper">
 			<article class="who-item">
 				<i class="who-item__icon icon-glasses" aria-hidden="true"></i>
 				<h3 class="who-item__header">Sleek design</h3>
@@ -75,7 +91,7 @@
 					Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
 				</p>
 			</article>
-	
+
 			<article class="who-item">
 				<i class="who-item__icon icon-heart" aria-hidden="true"></i>
 				<h3 class="who-item__header">Clean code</h3>
@@ -84,7 +100,7 @@
 					Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
 				</p>
 			</article>
-	
+
 			<article class="who-item">
 				<i class="who-item__icon icon-idea" aria-hidden="true"></i>
 				<h3 class="who-item__header">Creative ideas</h3>
@@ -93,7 +109,7 @@
 					Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
 				</p>
 			</article>
-	
+
 			<article class="who-item">
 				<i class="who-item__icon icon-chat" aria-hidden="true"></i>
 				<h3 class="who-item__header">Free support</h3>
@@ -106,7 +122,29 @@
 
 	</section>
 
-	<script src="js/main.js"></script>
+	<div class="section-about__container">
+		<section class="section-about">
+			<div class="section-about__wrapper">
+				<div class="section-about__item">
+					<img src="./img/monitor.png" alt="Monitor">
+				</div>
+
+				<div class="section-about__item">
+					<div class="section-about__about">
+						<h3 class="about__heading">Our history</h3>
+						<p class="about__paragraph">
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						</p>
+						<p class="about__paragraph">
+							It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s wit–h the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script src="./js/main.js"></script>
 </body>
 
 </html>

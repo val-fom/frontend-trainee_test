@@ -2,213 +2,203 @@
 // height: ;
 // }
 .header__container {
-    background-color: $color-storm-grey;
-    overflow: hidden;
-    position: relative;
-    min-height: 600px;
+	background-color: $color-storm-grey;
+	overflow: hidden;
+	position: relative;
+	min-height: 600px;
 }
 
 .header__mask {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    background: #fff;
-    z-index: 3;
-    bottom: -50%;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	background: #fff;
+	z-index: 3;
+	bottom: -50%;
 }
 
 .header__mask--left {
-    right: 50%;
-    transform: rotate(7.3deg);
-    transform-origin: 100% 0%;
+	right: 50%;
+	transform: rotate(7.3deg);
+	transform-origin: 100% 0%;
 }
 
 .header__mask--right {
-    left: 50%;
-    transform: rotate(-7.3deg);
-    transform-origin: 0% 0%;
+	left: 50%;
+	transform: rotate(-7.3deg);
+	transform-origin: 0% 0%;
 }
 
 .header__background {
-    background: url('../img/header_background.png') no-repeat center top;
-    background-size: cover;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+	background: url("../img/header_background.png") no-repeat center top;
+	background-size: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
 }
 
 .header__foreground {
-    background: rgba(#000, 0.7);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+	background: rgba(#000, 0.7);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
 }
 
 .header {
-    padding: 0 15px;
-    position: relative;
-    height: 100vh;
-    max-width: 1200px;
-    margin: auto;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	padding: 0 15px;
+	position: relative;
+	height: 100vh;
+	max-width: 1200px;
+	margin: auto;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .header__nav-wrapper {
-    display: flex;
-    align-items: center;
-    height: 132px; // margin-bottom: auto;
-    flex: 0 0 auto;
+	display: flex;
+	align-items: center;
+	height: 132px; // margin-bottom: auto;
+	flex: 0 0 auto;
 }
-
-.header__button--anchor {
-    font-family: 'fontawesome';
-}
-
 
 /* 
 * logo
 */
 
 .logo {
-    flex: 0 0 auto;
-    width: 141px;
-    height: 52px;
-    border: 3px solid $color-white;
-    position: relative;
-    margin-right: 10px;
-    &::before {
-        content: 'B';
-        color: $color-storm-grey;
-        position: absolute;
-        height: 52px;
-        width: 52px;
-        background-color: $color-white;
-        top: -3px;
-        left: -3px;
-        text-align: center;
-        line-height: 53px;
-        font-size: 3.6rem;
-        font-weight: 700;
-    }
-    &::after {
-        content: 'INO';
-        position: absolute;
-        top: -3px;
-        right: -3px;
-        color: $color-white;
-        height: 52px;
-        width: 92px;
-        text-align: center;
-        line-height: 53px;
-        font-size: 3.6rem;
-        font-weight: 300;
-        letter-spacing: 0.05em;
-    }
+	flex: 0 0 auto;
+	width: 141px;
+	height: 52px;
+	border: 3px solid $color-white;
+	position: relative;
+	margin-right: 10px;
+	&::before {
+		content: "B";
+		color: $color-storm-grey;
+		position: absolute;
+		height: 52px;
+		width: 52px;
+		background-color: $color-white;
+		top: -3px;
+		left: -3px;
+		text-align: center;
+		line-height: 53px;
+		font-size: 3.6rem;
+		font-weight: 700;
+	}
+	&::after {
+		content: "INO";
+		position: absolute;
+		top: -3px;
+		right: -3px;
+		color: $color-white;
+		height: 52px;
+		width: 92px;
+		text-align: center;
+		line-height: 53px;
+		font-size: 3.6rem;
+		font-weight: 300;
+		letter-spacing: 0.05em;
+	}
 }
-
 
 /* 
 * nav
 */
 
 .nav {
-    width: 728px;
-    margin-left: auto;
+	width: 728px;
+	margin-left: auto;
 }
 
 .nav__ul {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .nav__item {
-    >a {
-        color: $color-white;
-        text-transform: uppercase;
-        line-height: 52px;
-        height: 52px;
-        display: block;
-        transition: $transition;
-        border-bottom: 1px solid transparent;
-        &:hover {
-            color: $color-accent;
-            border-color: $color-accent;
-        }
-    }
+	> a {
+		color: $color-white;
+		text-transform: uppercase;
+		line-height: 52px;
+		height: 52px;
+		display: block;
+		transition: $transition;
+		border-bottom: 1px solid transparent;
+		&:hover {
+			color: $color-accent;
+			border-color: $color-accent;
+		}
+	}
 }
-
 
 /* 
 * heading
 */
 
 .header__heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: auto;
 }
 
 .heading__heading-sub {
-    color: $color-white;
-    font-family: $font-pro;
-    font-size: 2.4rem;
-    font-weight: normal;
-    letter-spacing: 0.05em;
+	color: $color-white;
+	font-family: $font-pro;
+	font-size: 2.4rem;
+	font-weight: normal;
+	letter-spacing: 0.05em;
 }
 
 .heading__heading-main {
-    color: $color-white;
-    text-transform: uppercase;
-    font-size: 7.2rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    margin-top: 3.5rem;
-    flex: 0 0 auto;
+	color: $color-white;
+	text-transform: uppercase;
+	font-size: 7.2rem;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	margin-top: 3.5rem;
+	flex: 0 0 auto;
 }
 
 .heading__brakeline {
-    margin-top: 38px;
-    display: flex;
-    align-items: center;
+	margin-top: 38px;
+	display: flex;
+	align-items: center;
 }
 
 .brakeline__line {
-    width: 80px;
-    height: 1px;
-    background: #f1ebe7;
+	width: 80px;
+	height: 1px;
+	background: #f1ebe7;
 }
 
 .brakeline__dot {
-    border-radius: 50%;
-    width: 7px;
-    height: 7px;
-    background: $color-accent;
-    margin: 0 14px;
+	border-radius: 50%;
+	width: 7px;
+	height: 7px;
+	background: $color-accent;
+	margin: 0 14px;
 }
 
 .heading__paragraph {
-    color: #cbc6c0;
-    max-width: 600px;
-    margin-top: 37px;
-    line-height: 1.75em;
+	color: #cbc6c0;
+	max-width: 600px;
+	margin-top: 37px;
+	line-height: 1.75em;
 }
 
 .heading__buttons-wrapper {
-    display: flex;
-    margin-top: 65px;
-    margin-bottom: 50px;
+	display: flex;
+	margin-top: 65px;
+	margin-bottom: 50px;
 }
 
 .heading__button {
-    margin: 0 15px;
+	margin: 0 15px;
 }
-
-
-

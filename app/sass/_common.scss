@@ -4,7 +4,6 @@ html {
 	font-family: $font-main;
 	font-size: 10px;
 	height: 100%;
-	// background: $color-orange-red;
 }
 
 *,
@@ -38,5 +37,4 @@ a:active {
 .button--accent {
 	background: $color-accent;
 	border-color: $color-accent;
-	// color: $color-accent;
 }
