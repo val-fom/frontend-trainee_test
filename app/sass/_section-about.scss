@@ -5,18 +5,49 @@
 .section-about {
 	min-height: 600px;
 	max-width: 1200px;
-	padding: 0 15px;
+	padding: 140px 15px;
 	margin: auto;
 	overflow: hidden;
 }
 
-.section-about__wrapper {
+.about__wrapper {
 	display: flex;
 	margin: -80px;
 	padding: 40px;
 }
 
-.section-about__item {
+.about__item {
 	flex: 1 1 auto;
 	margin: 40px;
+}
+// TODO: check if I need this wrapper
+.about__body {
+	display: flex;
+	flex-direction: column;
+}
+
+.about__heading {
+	text-transform: uppercase;
+	font-family: $font-pro;
+	font-size: 3.6rem;
+	font-weight: 700;
+	letter-spacing: 0.37rem;
+	border-left: 6px solid #e74c3c;
+	padding-left: 28px;
+	color: $color-grey;
+	margin-bottom: 10px;
+}
+
+.about__paragraph {
+	font-family: $font-pro;
+	color: #999999;
+	line-height: 2.1em;
+	font-size: 1.4rem;
+	margin-top: 30px;
+	letter-spacing: 0.016em;
+	hyphens: auto;
+}
+
+.about__button {
+	margin-top: 40px;
 }

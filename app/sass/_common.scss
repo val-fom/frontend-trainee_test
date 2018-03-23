@@ -30,8 +30,10 @@ a:active {
 	color: #fff;
 	border: 1px solid #fff;
 	line-height: 56px;
-	min-width: 225px;
+	width: 225px;
 	height: 56px;
+	text-align: center;
+	letter-spacing: 0.03em;
 }
 
 .button--accent {
