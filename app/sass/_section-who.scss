@@ -8,25 +8,6 @@
 	overflow: hidden;
 }
 
-.section-who__button-anchor {
-	font-size: 28px;
-	position: absolute;
-	top: -35px;
-	right: 50%;
-	margin-right: -32px;
-	z-index: 4;
-	color: #000;
-	width: 64px;
-	height: 64px;
-	background-color: $color-white;
-	border-radius: 50%;
-	box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
-	border: none;
-	i {
-		color: $color-accent;
-	}
-}
-
 .section-who__item-wrapper {
 	display: flex;
 	margin: -40px;
