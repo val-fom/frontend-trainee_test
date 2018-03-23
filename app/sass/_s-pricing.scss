@@ -1,55 +1,17 @@
-.section-pricing__container {
+.s-pricing__container {
 	background-color: #fff;
 }
 
-.section-pricing {
-	position: relative;
-	max-width: 1200px;
-	margin: auto;
-	text-align: center;
-	padding: 140px 15px;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-}
-// TODO: remove this if unnecessary
-.pricing__heading-wrapper {
+.s-pricing {
 }
 
-.pricing__heading {
-	font-family: $font-pro;
-	color: $color-grey;
-	text-transform: uppercase;
-	font-size: 3.6rem;
-	font-weight: 700;
-	letter-spacing: 0.4rem;
-	margin-top: 10px;
-}
-
-.pricing__paragraph {
-	font-family: $font-pro;
-	color: #999999;
-	line-height: 2.1em;
-	font-size: 1.4rem;
-	margin-top: 15px;
-	letter-spacing: 0.07em;
-}
-
-.pricing__delimiter {
-	margin-top: 20px;
-	.delimiter__line {
-		background-color: #999;
-	}
-}
-
-.pricing__items-wrapper {
+.s-pricing__plans-wrapper {
 	display: flex;
 	margin: 50px -15px -15px;
 	padding: 7.5px;
 }
 
-.pricing-item {
+.plan {
 	flex: 1 1 33.3333333%;
 	margin: 7.5px;
 	display: flex;
@@ -58,19 +20,19 @@
 	align-items: center;
 	padding-bottom: 50px;
 	&:hover {
-		.pricing__button {
+		.plan__button {
 			background-color: $color-accent;
 		}
-		.pricing-item__price {
+		.plan__price {
 			color: $color-accent;
 		}
-		.pricing-item__heading-wrapper {
+		.plan__heading-wrapper {
 			background-color: $color-accent;
 		}
 	}
 }
 
-.pricing-item__heading-wrapper {
+.plan__heading-wrapper {
 	background-color: #999999;
 	height: 205px;
 	position: relative;
@@ -78,7 +40,7 @@
 	transition: $transition;
 }
 
-.pricing-item__heading {
+.plan__heading {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 600;
@@ -87,13 +49,16 @@
 	margin-top: 46px;
 }
 
-.pricing-item__price {
-	width: 150px;
-	height: 150px;
+.plan__price {
 	position: absolute;
 	bottom: 0;
-	margin-bottom: -75px;
 	right: 50%;
+}
+
+.price {
+	width: 150px;
+	height: 150px;
+	margin-bottom: -75px;
 	margin-right: -75px;
 	border-radius: 50%;
 	background-color: #fff;
@@ -116,14 +81,14 @@
 	line-height: 2em;
 }
 
-.pricing__services {
+.plan__services {
 	margin-top: 110px;
 	line-height: 2.9em;
 	letter-spacing: 0.02em;
 	color: #999;
 }
 
-.pricing__button {
+.plan__button {
 	margin-top: 37px;
 	height: 46px;
 	width: 147px;
@@ -131,6 +96,6 @@
 	font-size: 1.2rem;
 	line-height: 48px;
 	border: none;
-	box-shadow: 0px 2px 4.75px 0.25px rgba(#000, 0.25);
+	// box-shadow: 0px 2px 4.75px 0.25px rgba(#000, 0.25);
 	transition: $transition;
 }

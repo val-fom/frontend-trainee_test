@@ -1,0 +1,33 @@
+.s-about__container {
+	background-color: #f4f5f9;
+}
+
+.s-about__wrapper {
+	display: flex;
+	margin: -80px;
+	padding: 40px;
+}
+
+.s-about__item {
+	flex: 1 1 auto;
+	margin: 40px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.s-about__heading {
+	border-left: 6px solid #e74c3c;
+	padding-left: 28px;
+	margin-bottom: 10px;
+}
+
+.s-about__paragraph {
+	margin-top: 30px;
+	letter-spacing: 0.016em;
+	hyphens: auto;
+}
+
+.s-about__button {
+	margin-top: 40px;
+}

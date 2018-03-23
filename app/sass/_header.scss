@@ -189,26 +189,6 @@
 .heading__delimiter {
 	margin-top: 38px;
 }
-// TODO: move delimiter to commons
-.delimiter {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.delimiter__line {
-	width: 80px;
-	height: 1px;
-	background: #f1ebe7;
-}
-
-.delimiter__dot {
-	border-radius: 50%;
-	width: 7px;
-	height: 7px;
-	background: $color-accent;
-	margin: 0 14px;
-}
 
 .heading__paragraph {
 	color: #cbc6c0;
