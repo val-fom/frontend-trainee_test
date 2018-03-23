@@ -15,7 +15,7 @@
 	height: 64px;
 	background-color: $color-white;
 	border-radius: 50%;
-	box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 0 5px rgba(#fff, 0.25);
 	border: none;
 	i {
 		color: $color-accent;
@@ -186,19 +186,23 @@
 	flex: 0 0 auto;
 }
 
-.heading__brakeline {
+.heading__delimiter {
 	margin-top: 38px;
+}
+// TODO: move delimiter to commons
+.delimiter {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
-.brakeline__line {
+.delimiter__line {
 	width: 80px;
 	height: 1px;
 	background: #f1ebe7;
 }
 
-.brakeline__dot {
+.delimiter__dot {
 	border-radius: 50%;
 	width: 7px;
 	height: 7px;

@@ -1,0 +1,136 @@
+.section-pricing__container {
+	background-color: #fff;
+}
+
+.section-pricing {
+	position: relative;
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+	padding: 140px 15px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+// TODO: remove this if unnecessary
+.pricing__heading-wrapper {
+}
+
+.pricing__heading {
+	font-family: $font-pro;
+	color: $color-grey;
+	text-transform: uppercase;
+	font-size: 3.6rem;
+	font-weight: 700;
+	letter-spacing: 0.4rem;
+	margin-top: 10px;
+}
+
+.pricing__paragraph {
+	font-family: $font-pro;
+	color: #999999;
+	line-height: 2.1em;
+	font-size: 1.4rem;
+	margin-top: 15px;
+	letter-spacing: 0.07em;
+}
+
+.pricing__delimiter {
+	margin-top: 20px;
+	.delimiter__line {
+		background-color: #999;
+	}
+}
+
+.pricing__items-wrapper {
+	display: flex;
+	margin: 50px -15px -15px;
+	padding: 7.5px;
+}
+
+.pricing-item {
+	flex: 1 1 33.3333333%;
+	margin: 7.5px;
+	display: flex;
+	flex-direction: column;
+	background-color: $color-white;
+	align-items: center;
+	padding-bottom: 50px;
+	&:hover {
+		.pricing__button {
+			background-color: $color-accent;
+		}
+		.pricing-item__price {
+			color: $color-accent;
+		}
+		.pricing-item__heading-wrapper {
+			background-color: $color-accent;
+		}
+	}
+}
+
+.pricing-item__heading-wrapper {
+	background-color: #999999;
+	height: 205px;
+	position: relative;
+	width: 100%;
+	transition: $transition;
+}
+
+.pricing-item__heading {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 2.4rem;
+	letter-spacing: 0.03em;
+	margin-top: 46px;
+}
+
+.pricing-item__price {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: -75px;
+	right: 50%;
+	margin-right: -75px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 0 0 10px rgba(#f4f5f9, 0.25);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #999;
+	font-family: $font-pro;
+	transition: $transition;
+}
+
+.price__value {
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+.price__per {
+	font-size: 1.3rem;
+	line-height: 2em;
+}
+
+.pricing__services {
+	margin-top: 110px;
+	line-height: 2.9em;
+	letter-spacing: 0.02em;
+	color: #999;
+}
+
+.pricing__button {
+	margin-top: 37px;
+	height: 46px;
+	width: 147px;
+	background-color: #999;
+	font-size: 1.2rem;
+	line-height: 48px;
+	border: none;
+	box-shadow: 0px 2px 4.75px 0.25px rgba(#000, 0.25);
+	transition: $transition;
+}
