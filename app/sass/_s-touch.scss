@@ -5,8 +5,88 @@
 .s-touch {
 }
 
-.s-touch__heading {
+.s-touch__items-wrapper {
+	display: flex;
+	padding: 15px;
+	margin: 30px -30px 0;
+	align-items: stretch;
 }
 
-.s-touch__items-wrapper {
+.s-touch__item {
+	background-color: #fff;
+	border-radius: 3px;
+	margin: 15px;
+	padding: 35px 90px 94px;
+	text-align: left;
+}
+
+.s-touch__address {
+	flex: 1 1 41.6%;
+}
+
+.address__heading {
+	margin-top: 60px;
+	text-transform: uppercase;
+	color: $color-accent;
+	font-family: $font-pro;
+	font-weight: 600;
+	font-size: 2.4rem;
+}
+
+.address__paragraph {
+	margin-top: 20px;
+	font-size: 1.8rem;
+	color: #999999;
+	line-height: 1.4em;
+}
+
+.address__link {
+	color: inherit;
+	border-bottom: 1px dashed transparent;
+	transition: border-color $transition;
+	&:hover {
+		border-color: #999999;
+	}
+}
+
+.s-touch__form {
+	flex: 1 1 58.4%;
+	display: flex;
+	flex-direction: column;
+	padding: 70px 100px 95px;
+}
+
+.form__input {
+	color: #333;
+	margin-top: 11px;
+	height: 5rem;
+	font-size: 1.4rem;
+	padding: 0;
+	border: none;
+	border-bottom: 1px solid #999999;
+	flex: 0 0 5rem;
+	transition: border-bottom $transition;
+	&:focus {
+		border-bottom: 2px solid $color-accent;
+		outline: none;
+	}
+}
+
+.form__input.form__message {
+	flex: 1 1 auto;
+	line-height: 1.5em;
+	padding-top: 1.6rem;
+	resize: none;
+}
+
+.form__button {
+	margin-top: 30px;
+	height: 44px;
+	width: 157px;
+	font-size: 1.4rem;
+	line-height: 44px;
+	border: none;
+	transition: $transition;
+	font-weight: 600;
+	font-family: $font-main;
 }
