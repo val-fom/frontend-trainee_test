@@ -36,7 +36,7 @@ a:active {
 	text-align: center;
 	letter-spacing: 0.03em;
 	box-shadow: 0px 2px 4.75px 0.25px rgba(#000, 0.25);
-	transition: $transition;
+	transition: transform $transition, background-color $transition;
 	will-change: transform;
 	&:hover,
 	&:focus {
@@ -67,9 +67,6 @@ a:active {
 	@include media-query(1023px) {
 		padding: 75px 15px;
 	}
-}
-
-.section-heading {
 }
 
 .section-heading__heading {

@@ -2,9 +2,6 @@
 	background-color: #fff;
 }
 
-.s-pricing {
-}
-
 .s-pricing__plans-wrapper {
 	display: flex;
 	margin: 50px -15px -15px;
@@ -135,7 +132,6 @@
 	font-size: 1.2rem;
 	line-height: 48px;
 	border: none;
-	transition: trasnform background-color $transition;
 	@include media-query-min-max(419px, 899px) {
 		margin: 10px 0;
 	}
