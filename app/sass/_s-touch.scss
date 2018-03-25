@@ -2,9 +2,6 @@
 	background-color: #343434;
 }
 
-.s-touch {
-}
-
 .s-touch__items-wrapper {
 	display: flex;
 	padding: 15px;
@@ -86,6 +83,7 @@
 	padding-top: 1.6rem;
 	resize: none;
 	min-height: 10rem;
+	font-family: $font-main;
 }
 
 .form__button {
