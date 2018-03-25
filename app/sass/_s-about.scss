@@ -6,14 +6,28 @@
 	display: flex;
 	margin: -80px;
 	padding: 40px;
+	flex-wrap: wrap;
+	@include media-query(899px) {
+		margin: -40px;
+		padding: 20px;
+	}
 }
 
 .s-about__item {
-	flex: 1 1 auto;
+	flex: 1 1 150px;
 	margin: 40px;
 	display: flex;
 	flex-direction: column;
 	text-align: left;
+	@include media-query(899px) {
+		margin: 20px;
+	}
+}
+
+.s-about__img {
+	min-width: 250px;
+	width: 100%;
+	max-width: 506px;
 }
 
 .s-about__heading {
