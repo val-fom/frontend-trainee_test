@@ -280,10 +280,10 @@
 				</address>
 
 				<form class="s-touch__item s-touch__form" action="">
-					<input class="form__input" type="text" placeholder="Name">
-					<input class="form__input" type="email" placeholder="Email">
-					<input class="form__input" type="text" placeholder="Subject">
-					<textarea class="form__input form__message" placeholder="Message"></textarea>
+					<input class="form__input" type="text" placeholder="Name" name="name" pattern="^[a-zA-Z ,.'-]+$" required>
+					<input class="form__input" type="email" placeholder="Email" name="email" required>
+					<input class="form__input" type="text" placeholder="Subject" name="subject">
+					<textarea class="form__input form__message" placeholder="Message" name="message" required></textarea>
 					<button class="button button--accent form__button" type="submit" name="submit" id="submit">Send message</button>
 				</form>
 			</div>
@@ -347,7 +347,6 @@
 		</footer>
 	</div>
 
-	<script src="./js/main.js"></script>
 </body>
 
 </html>
