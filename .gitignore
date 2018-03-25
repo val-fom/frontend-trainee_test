@@ -3,3 +3,4 @@ sublime-gulp.log
 .sublime-gulp.cache
 .jshintrc
 */css/
+*/*.psd
