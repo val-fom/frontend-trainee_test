@@ -3,6 +3,24 @@
 	position: relative;
 }
 
+.footer__up-button {
+	position: absolute;
+	right: 50px;
+	top: 0;
+	height: 53px;
+	width: 53px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: $color-accent;
+	margin: -26.5px;
+	i {
+		color: #fff;
+		font-size: 2rem;
+	}
+}
+
 .footer {
 	min-height: 90px;
 	max-width: 1200px;
