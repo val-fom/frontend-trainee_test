@@ -3,3 +3,9 @@
 		@content;
 	}
 }
+
+@mixin media-query-min-max($value-min: "0", $value-max: "9999") {
+	@media screen and (min-width : #{$value-min}) and (max-width : #{$value-max}) {
+		@content;
+	}
+}

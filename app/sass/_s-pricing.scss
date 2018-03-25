@@ -9,10 +9,10 @@
 	display: flex;
 	margin: 50px -15px -15px;
 	padding: 7.5px;
-	@include media-query(899px) {
+	@include media-query-min-max(419px, 899px) {
 		flex-direction: column;
 	}
-	// flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .plan {
@@ -34,7 +34,7 @@
 			background-color: $color-accent;
 		}
 	}
-	@include media-query(899px) {
+	@include media-query-min-max(419px, 899px) {
 		flex-direction: row;
 		align-items: center;
 		padding-bottom: 0;
@@ -44,10 +44,12 @@
 
 .plan__heading-wrapper {
 	background-color: #999999;
+	min-width: 170px;
 	height: 205px;
 	position: relative;
 	width: 100%;
-	@include media-query(899px) {
+	transition: background-color $transition;
+	@include media-query-min-max(419px, 899px) {
 		width: 30%;
 		height: auto;
 		overflow: hidden;
@@ -69,7 +71,7 @@
 	position: absolute;
 	bottom: 0;
 	right: 50%;
-	@include media-query(899px) {
+	@include media-query-min-max(419px, 899px) {
 		bottom: 30px;
 	}
 }
@@ -87,7 +89,7 @@
 	justify-content: center;
 	color: #999;
 	font-family: $font-pro;
-	transition: $transition;
+	transition: color $transition;
 }
 
 .price__value {
@@ -100,13 +102,28 @@
 	line-height: 2em;
 }
 
+.plan__sub-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include media-query-min-max(419px, 899px) {
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin-left: 10px;
+	}
+}
+
 .plan__services {
 	margin-top: 110px;
 	line-height: 2.9em;
 	letter-spacing: 0.02em;
 	color: #999;
-	@include media-query(899px) {
+	white-space: nowrap;
+	@include media-query-min-max(419px, 899px) {
 		margin-top: 0;
+		line-height: 2.3em;
 	}
 }
 
@@ -118,9 +135,8 @@
 	font-size: 1.2rem;
 	line-height: 48px;
 	border: none;
-	transition: $transition;
-	@include media-query(899px) {
-		margin-top: 0;
-		margin-right: 20px;
+	transition: trasnform background-color $transition;
+	@include media-query-min-max(419px, 899px) {
+		margin: 10px 0;
 	}
 }
