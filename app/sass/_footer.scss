@@ -1,0 +1,44 @@
+.footer-container {
+	background-color: #202020;
+	position: relative;
+}
+
+.footer {
+	min-height: 90px;
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 15px;
+	overflow: hidden;
+	display: flex;
+}
+
+.footer-wrapper {
+	flex: 1 1 auto;
+	display: flex;
+	margin: -40px;
+	padding: 20px;
+	align-items: center;
+}
+
+.footer__item {
+	margin: 20px;
+	display: flex;
+	flex: 1 1 50%;
+}
+
+.social__icon {
+	font-size: 2rem;
+	margin-right: 1.6rem;
+	color: #999999;
+	transition: color $transition;
+	&:hover {
+		color: $color-accent;
+	}
+}
+
+.copyright {
+	display: block;
+	color: #999999;
+	font-weight: 600;
+	text-align: right;
+}

@@ -36,6 +36,7 @@ a:active {
 	letter-spacing: 0.03em;
 	box-shadow: 0px 2px 4.75px 0.25px rgba(#000, 0.25);
 	transition: $transition;
+	will-change: transform;
 	&:hover,
 	&:focus {
 		outline: none;
@@ -92,7 +93,6 @@ a:active {
 	}
 }
 
-// TODO: move delimiter to commons
 .delimiter {
 	display: flex;
 	align-items: center;
