@@ -9,10 +9,14 @@
 	display: flex;
 	margin: 50px -15px -15px;
 	padding: 7.5px;
+	@include media-query(899px) {
+		flex-direction: column;
+	}
+	// flex-wrap: wrap;
 }
 
 .plan {
-	flex: 1 1 33.3333333%;
+	flex: 1 1 230px;
 	margin: 7.5px;
 	display: flex;
 	flex-direction: column;
@@ -30,6 +34,12 @@
 			background-color: $color-accent;
 		}
 	}
+	@include media-query(899px) {
+		flex-direction: row;
+		align-items: center;
+		padding-bottom: 0;
+		justify-content: space-between;
+	}
 }
 
 .plan__heading-wrapper {
@@ -37,7 +47,13 @@
 	height: 205px;
 	position: relative;
 	width: 100%;
-	transition: $transition;
+	@include media-query(899px) {
+		width: 30%;
+		height: auto;
+		overflow: hidden;
+		align-self: stretch;
+		flex-shrink: 0;
+	}
 }
 
 .plan__heading {
@@ -53,6 +69,9 @@
 	position: absolute;
 	bottom: 0;
 	right: 50%;
+	@include media-query(899px) {
+		bottom: 30px;
+	}
 }
 
 .price {
@@ -86,6 +105,9 @@
 	line-height: 2.9em;
 	letter-spacing: 0.02em;
 	color: #999;
+	@include media-query(899px) {
+		margin-top: 0;
+	}
 }
 
 .plan__button {
@@ -97,4 +119,8 @@
 	line-height: 48px;
 	border: none;
 	transition: $transition;
+	@include media-query(899px) {
+		margin-top: 0;
+		margin-right: 20px;
+	}
 }
