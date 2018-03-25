@@ -63,6 +63,9 @@ a:active {
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
+	@include media-query(1023px) {
+		padding: 75px 15px;
+	}
 }
 
 .section-heading {
