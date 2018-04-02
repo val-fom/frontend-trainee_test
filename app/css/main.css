@@ -360,10 +360,15 @@ a:active {
   align-items: center;
   min-height: 132px;
   flex: 0 0 auto;
-  flex-wrap: wrap;
   justify-content: center;
   margin: 0 -40px;
   padding: 20px;
+}
+
+@media screen and (max-width: 899px) {
+  .header__nav-wrapper {
+    flex-wrap: wrap;
+  }
 }
 
 /* 
@@ -414,6 +419,7 @@ a:active {
 .nav {
   width: 728px;
   margin-left: auto;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 899px) {
