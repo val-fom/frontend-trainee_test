@@ -94,10 +94,12 @@
 	align-items: center;
 	min-height: 132px; // margin-bottom: auto;
 	flex: 0 0 auto;
-	flex-wrap: wrap;
 	justify-content: center;
 	margin: 0 -40px;
 	padding: 20px;
+	@include media-query(899px) {
+		flex-wrap: wrap;
+	}
 }
 
 /* 
@@ -111,7 +113,6 @@
 	border: 3px solid $color-white;
 	position: relative;
 	margin: 10px 20px;
-	// margin-right: 20px;
 	&::before {
 		content: "B";
 		color: $color-storm-grey;
@@ -149,7 +150,7 @@
 .nav {
 	width: 728px;
 	margin-left: auto;
-	// min-width: 470px;
+	margin-right: 20px;
 	@include media-query(899px) {
 		margin: 0 20px;
 		flex: 1 1 470px;
